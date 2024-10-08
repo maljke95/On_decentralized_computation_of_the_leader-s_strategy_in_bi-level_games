@@ -1,0 +1,81 @@
+% This file was created with tikzplotlib v0.9.15.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.0901960784313725,0.745098039215686,0.811764705882353}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, at={(1.04,1)}, draw=white!80!black},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Station number},
+xmajorgrids,
+xmin=0.85, xmax=4.15,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ymin=2.28678672694908, ymax=4.6600005584024,
+ytick style={color=black}
+]
+\addplot [semithick, color0, mark=triangle*, mark size=5, mark options={solid}]
+table {%
+1 4.33938234022854
+};
+\addlegendentry{Company 1}
+\addplot [semithick, color1, mark=triangle*, mark size=5, mark options={solid}, forget plot]
+table {%
+2 3.34941874582977
+};
+\addplot [semithick, white!49.8039215686275!black, mark=triangle*, mark size=5, mark options={solid}, forget plot]
+table {%
+3 3.7344233764272
+};
+\addplot [semithick, color2, mark=triangle*, mark size=5, mark options={solid}, forget plot]
+table {%
+4 2.39773520946261
+};
+\addplot [semithick, color0, mark=square*, mark size=5, mark options={solid}]
+table {%
+1 4.3133431753038
+};
+\addlegendentry{Company 2}
+\addplot [semithick, color1, mark=square*, mark size=5, mark options={solid}, forget plot]
+table {%
+2 3.32200755426615
+};
+\addplot [semithick, white!49.8039215686275!black, mark=square*, mark size=5, mark options={solid}, forget plot]
+table {%
+3 3.73718726042375
+};
+\addplot [semithick, color2, mark=square*, mark size=5, mark options={solid}, forget plot]
+table {%
+4 2.39466008292423
+};
+\addplot [semithick, color0, mark=pentagon*, mark size=5, mark options={solid}]
+table {%
+1 4.55212720242725
+};
+\addlegendentry{Company 3}
+\addplot [semithick, color1, mark=pentagon*, mark size=5, mark options={solid}, forget plot]
+table {%
+2 3.37964354201187
+};
+\addplot [semithick, white!49.8039215686275!black, mark=pentagon*, mark size=5, mark options={solid}, forget plot]
+table {%
+3 3.83239866646319
+};
+\addplot [semithick, color2, mark=pentagon*, mark size=5, mark options={solid}, forget plot]
+table {%
+4 2.41779737654234
+};
+\end{axis}
+
+\draw ({$(current bounding box.south west)!0.5!(current bounding box.south east)$}|-{$(current bounding box.south west)!0.98!(current bounding box.north west)$}) node[
+  scale=0.6,
+  anchor=north,
+  text=black,
+  rotate=0.0
+]{Charging price distribution at each station};
+\end{tikzpicture}
